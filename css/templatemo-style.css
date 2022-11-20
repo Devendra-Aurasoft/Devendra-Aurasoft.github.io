@@ -381,8 +381,8 @@ ul {
 
 .tm-table-set {
   position: absolute;
-  bottom: -100px;
-  left: 0;
+  bottom: -50px;
+  left: 150px;
 }
 
 .tm-lights-container {
@@ -480,6 +480,7 @@ ul {
 .copyright-text {
   margin-top: 30px;
   margin-bottom: 30px;
+  color: rgb(215, 215, 215);
 }
 
 .tm-social-icon {
@@ -540,10 +541,11 @@ ul {
 
 .tm-popular-items-container:last-child {
   margin-top: 15px;
+  justify-content: space-around;
 }
 
 .tm-popular-item-description {
-  padding: 0 30px 60px;
+  padding: 0 30px 90px;
   position: relative;
   text-align: center;
 }
@@ -602,8 +604,8 @@ ul {
 }
 
 .order-now-container {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   background-color: rgb(82, 76, 76);
   border-radius: 50%;
   margin: 0 auto;
@@ -621,8 +623,9 @@ ul {
   justify-content: center;
   color: white;
   position: absolute;
-  left: 92px;
-  bottom: -50px;
+  left: 40px;
+  bottom: -65px;
+  /* top: -75px; */
 }
 
 .tm-special-item {
@@ -890,7 +893,8 @@ button.tm-more-button {
   .tm-welcome-content {
     margin-bottom: 250px;
   }
-/* 
+
+  /* 
   .tm-main-section {
     padding-top: 200px;
   } */
@@ -1104,9 +1108,10 @@ button.tm-more-button {
 
 .waviy {
   position: relative;
-  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, .2));
   font-size: 60px;
 }
+
 .waviy span {
   position: relative;
   display: inline-block;
@@ -1115,18 +1120,386 @@ button.tm-more-button {
   text-transform: uppercase;
   animation: waviy 1s infinite;
   animation-delay: calc(.1s * var(--i));
-  
+
 }
+
 @keyframes waviy {
-  0%,40%,100% {
+
+  0%,
+  40%,
+  100% {
     transform: translateY(0)
   }
+
   20% {
     transform: translateY(-20px)
   }
 }
 
 /* img  */
-.img-circle{
+.img-circle {
   width: 200px;
+}
+
+/* new */
+.order-now-container img {
+  width: 80%;
+  border-radius: 50%;
+  height: 80%;
+}
+
+.about_text {
+  display: flex;
+  justify-content: space-between;
+}
+.copyright-text a{
+  color: #fff;
+}
+/* progress bar */
+/* 
+.jumbotron {
+  background: rgb(235, 226, 226);
+  padding: 100px;
+}
+
+.content {
+  background: #fff;
+  padding: 50px;
+  font-size: 19px;
+  line-height: 30px;
+  min-height: 3000px;
+}
+
+.scroll-line {
+  background: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
+    linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);
+  top: 0;
+  left: 0;
+  height: 10px;
+  position: fixed;
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+} */
+.order-now-container img {
+  transition: .6s;
+}
+.order-now-container{
+  transition: .6s;
+}
+.order-now-container:hover {
+  box-shadow: 0 5px 5px rgb(98, 97, 97);
+}
+
+.order-now-container:hover img
+{
+scale: calc(.9);
+}
+
+
+
+
+/* ===================================== */
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+ /* *, *:before, *:after {
+	 margin: 0;
+	 padding: 0;
+	 -webkit-box-sizing: border-box;
+	 box-sizing: border-box;
+} */
+ html, body {
+	 background: #1a1a1a;
+	 width: 100%;
+	 height: 100%;
+	 font-family: 'PT Sans', sans-serif;
+}
+ .skills-bar-container {
+	 position: relative;
+	 width: 80%;
+	 min-width: 300px;
+	 list-style: none;
+}
+ .skills-bar-container li {
+	 position: relative;
+	 width: 100%;
+	 padding: 5px;
+	 margin-bottom: 10px;
+}
+ .skills-bar-container li .progressbar-title {
+	 color: #c79c60;
+}
+ .skills-bar-container li .progressbar-title h3 {
+	 display: inline-block;
+}
+ .skills-bar-container li .progressbar-title .percent {
+	 position: absolute;
+	 right: 5px;
+}
+ .skills-bar-container li .bar-container {
+	 background: rgb(245, 242, 242);
+	 position: relative;
+	 width: 100%;
+	 height: 5px;
+	 margin-top: 5px;
+	 display: block;
+	 -webkit-border-radius: 5px;
+	 -moz-border-radius: 5px;
+	 -ms-border-radius: 5px;
+	 border-radius: 5px;
+}
+.progressbar{
+  background-color: #7c6a51;
+}
+ .skills-bar-container li .bar-container .progressbar {
+	 position: absolute;
+	 width: 0%;
+	 height: 100%;
+	 -webkit-border-radius: 5px;
+	 -moz-border-radius: 5px;
+	 -ms-border-radius: 5px;
+	 border-radius: 5px;
+	 -webkit-animation-duration: 2s;
+	 animation-duration: 2s;
+	 -webkit-animation-timing-function: ease-out;
+	 animation-timing-function: ease-out;
+	 -webkit-animation-fill-mode: both;
+	 animation-fill-mode: both;
+}
+ .skills-bar-container li .bar-container #progress-html {
+	 -webkit-animation-name: progress-html;
+	 animation-name: progress-html;
+	 -webkit-animation-delay: 0.7s;
+	 animation-delay: 0.7s;
+}
+ .skills-bar-container li .bar-container #progress-css {
+	 -webkit-animation-name: progress-css;
+	 animation-name: progress-css;
+	 -webkit-animation-delay: 1.4s;
+	 animation-delay: 1.4s;
+}
+ .skills-bar-container li .bar-container #progress-javascript {
+	 -webkit-animation-name: progress-javascript;
+	 animation-name: progress-javascript;
+	 -webkit-animation-delay: 2.1s;
+	 animation-delay: 2.1s;
+}
+ .skills-bar-container li .bar-container #progress-php {
+	 -webkit-animation-name: progress-php;
+	 animation-name: progress-php;
+	 -webkit-animation-delay: 2.8s;
+	 animation-delay: 2.8s;
+}
+ .skills-bar-container li .bar-container #progress-angular {
+	 -webkit-animation-name: progress-angular;
+	 animation-name: progress-angular;
+	 -webkit-animation-delay: 3.5s;
+	 animation-delay: 3.5s;
+}
+.skills-bar-container li .bar-container #progress-Bootstrape {
+  -webkit-animation-name: progress-html;
+  animation-name: progress-html;
+  -webkit-animation-delay: 4.0s;
+  animation-delay: 4.0s;
+}
+.skills-bar-container li .bar-container #progress-Material {
+  -webkit-animation-name: progress-Material;
+  animation-name: progress-Material;
+  -webkit-animation-delay: 4.5s;
+  animation-delay: 4.5s;
+}
+.skills-bar-container li .bar-container #progress-NodeJS {
+  -webkit-animation-name: progress-NodeJS;
+  animation-name: progress-NodeJS;
+  -webkit-animation-delay: 5.0s;
+  animation-delay: 5.0s;
+}
+.skills-bar-container li .bar-container #progress-Git {
+  -webkit-animation-name: progress-Git;
+  animation-name: progress-Git;
+  -webkit-animation-delay: 5.5s;
+  animation-delay: 5.5s;
+}
+.skills-bar-container li .bar-container #progress-Mongo {
+  -webkit-animation-name: progress-Mongo;
+  animation-name: progress-Mongo;
+  -webkit-animation-delay: 6s;
+  animation-delay: 6s;
+}
+
+ /* .progressred {
+	 background-color: #c0392b;
+}
+ .progressblue {
+	 background-color: #19f;
+}
+ .progresspurple {
+	 background-color: #9b59b6;
+}
+ .progressorange {
+	 background-color: #ffa500;
+}
+ .progressgreen {
+	 background-color: #27ae60;
+} */
+ @-webkit-keyframes progress-html {
+	 0% {
+		 width: 0%;
+	}
+	 100% {
+		 width: 100%;
+	}
+}
+ @-webkit-keyframes progress-css {
+	 0% {
+		 width: 0%;
+	}
+	 100% {
+		 width: 90%;
+	}
+}
+ @-webkit-keyframes progress-javascript {
+	 0% {
+		 width: 0%;
+	}
+	 100% {
+		 width: 70%;
+	}
+}
+ @-webkit-keyframes progress-php {
+	 0% {
+		 width: 0%;
+	}
+	 100% {
+		 width: 55%;
+	}
+}
+ @-webkit-keyframes progress-angular {
+	 0% {
+		 width: 0%;
+	}
+	 100% {
+		 width: 65%;
+	}
+}
+ @-webkit-keyframes progress-Bootstrape {
+	 0% {
+		 width: 0%;
+	}
+	 100% {
+		 width: 90%;
+	}
+}
+ @-webkit-keyframes progress-Material {
+	 0% {
+		 width: 0%;
+	}
+	 100% {
+		 width: 60%;
+	}
+}
+ @-webkit-keyframes progress-NodeJS {
+	 0% {
+		 width: 0%;
+	}
+	 100% {
+		 width: 70%;
+	}
+}
+ @-webkit-keyframes progress-Git {
+	 0% {
+		 width: 0%;
+	}
+	 100% {
+		 width: 55%;
+	}
+}
+ @-webkit-keyframes progress-Mongo {
+	 0% {
+		 width: 0%;
+	}
+	 100% {
+		 width: 65%;
+	}
+}
+ @keyframes progress-html {
+	 0% {
+		 width: 0%;
+	}
+	 100% {
+		 width: 100%;
+	}
+}
+ @keyframes progress-css {
+	 0% {
+		 width: 0%;
+	}
+	 100% {
+		 width: 90%;
+	}
+}
+ @keyframes progress-javascript {
+	 0% {
+		 width: 0%;
+	}
+	 100% {
+		 width: 70%;
+	}
+}
+ @keyframes progress-php {
+	 0% {
+		 width: 0%;
+	}
+	 100% {
+		 width: 55%;
+	}
+}
+ @keyframes progress-angular {
+	 0% {
+		 width: 0%;
+	}
+	 100% {
+		 width: 65%;
+	}
+}
+ @keyframes progress-Bootstrape {
+	 0% {
+		 width: 0%;
+	}
+	 100% {
+		 width: 90%;
+	}
+}
+ @keyframes progress-Material {
+	 0% {
+		 width: 0%;
+	}
+	 100% {
+		 width: 90%;
+	}
+}
+ @keyframes progress-NodeJS {
+	 0% {
+		 width: 0%;
+	}
+	 100% {
+		 width: 70%;
+	}
+}
+ @keyframes progress-Git {
+	 0% {
+		 width: 0%;
+	}
+	 100% {
+		 width: 55%;
+	}
+}
+ @keyframes progress-Mongo {
+	 0% {
+		 width: 0%;
+	}
+	 100% {
+		 width: 65%;
+	}
+}
+.logo_img{
+  width: 40px;
 }
